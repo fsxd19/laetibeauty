@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Beauté des Mains & Pieds – Laeti'Beauty</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffaf8;
+      margin: 0;
+      padding: 0;
+    }
+    body.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+body.fade.loaded {
+  opacity: 1;
+}
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #6d4c41;
+      font-weight: 500;
+    }
+
+    .main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .section-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 4rem;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .texte {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .texte h1 {
+      font-size: 2.3rem;
+      margin-bottom: 0.5rem;
+      color: #6d4c41;
+      border-bottom: 2px solid #cdb7a0;
+    }
+
+    .texte p {
+      color: #7a554b;
+      margin-bottom: 2rem;
+    }
+
+    .tarifs ul {
+      list-style: none;
+      padding-left: 0;
+      line-height: 1.8;
+      font-size: 1rem;
+      color: #44352f;
+    }
+
+    .tarifs li {
+      display: flex;
+      justify-content: space-between;
+      max-width: 350px;
+      border-bottom: 1px dotted #ccc;
+      padding: 8px 0;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .tarif-list li:hover {
+      background-color: #f5e8e2;
+      transform: scale(1.01);
+      border-radius: 6px;
+    }
+
+    .image {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .image img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 4rem;
+      padding: 0.6rem 1.2rem;
+      background: #9c6e5c;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .back-button:hover {
+      transform: translateX(-4px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    @media screen and (max-width: 768px) {
+      .section-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .tarifs li {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+     .reserve-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: #9c6e5c;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  z-index: 100;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+reserve-btn:hover {
+  background: #a17948;
+}
+
+    footer {
+      background: #dcc6ac;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: #5b3d2d;
+    }
+
+    .footer-section {
+      flex: 1 1 300px;
+      margin: 1rem;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    .footer-section p,
+    .footer-section a {
+      font-size: 0.9rem;
+      color: #5b3d2d;
+      text-decoration: none;
+    }
+
+    .social-icons img {
+      width: 22px;
+      margin-right: 12px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #5b3d2d;
+      margin-top: 2rem;
+      flex: 1 1 100%;
+    }
+
+    @media (max-width: 768px) {
+      .banner { height: 200px; }
+      nav a { margin-left: 1rem; font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body class="fade">
+  <header class="header">
+    <div class="logo">
+      <a href="index.html#accueil"><img src="img/logo.png" alt="Logo" height="60"></a>
+    </div>
+    <nav class="nav">
+      <a href="index.html#accueil">Accueil</a>
+      <a href="prestations.html">Préstations</a>
+      <a href="à propos.html">À propos</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- Section Mains -->
+    <div class="section-block">
+      <div class="texte">
+        <h1>Beauté des mains</h1>
+        <p>Offrez à vos mains un soin doux, esthétique et ressourçant.</p>
+        <div class="tarifs">
+          <ul class="tarif-list" >
+            <li><span>Manucure Simple</span><span>12 €</span></li>
+            <li><span>Pose de Semi Permanent</span><span>22 €</span></li>
+            <li><span>Pose Américaine</span><span>35 €</span></li>
+            <li><span>Soin des Mains Complet</span><span>35 €</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="image">
+        <img src="img/manucure.png" alt="Soins des mains">
+      </div>
+    </div>
+
+    <!-- Section Pieds -->
+    <div class="section-block">
+      <div class="image">
+        <img src="img/pedicure.png" alt="Soins des pieds">
+      </div>
+      <div class="tarifs">
+        <h1>Beauté des pieds</h1>
+        <p>Apportez douceur et fraîcheur à vos pieds avec nos soins dédiés.</p>
+          <ul class="tarif-list">
+            <li><span>Pédicure Simple</span><span>15 €</span></li>
+            <li><span>Pédicure + Corps</span><span>22 €</span></li>
+            <li><span>Pose Semi Permanent Pieds</span><span>22 €</span></li>
+            <li><span>Soin Complet des Pieds (45min)</span><span>45 €</span></li>
+          </ul>
+        </div>
+        <a href="prestations.html" class="back-button"> Retour aux prestations</a>
+      </div>
+    </div>
+  </main>
+  <!-- BOUTON RESERVATION -->
+  <a class="reserve-btn" href="https://wa.me/33600000000" target="_blank">← Réservez maintenant</a>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-section">
+      <img src="img/logo.png" alt="Logo" style="height: 60px; margin-bottom: 1rem;">
+      <p>Institut de bien-être à Rosendaël</p>
+      <p>Ouvert du lundi au vendredi de 9h à 18h</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Adresse & contact</h4>
+      <p>Laeti’Beauty </br>
+      74 rue Paul Vancassel<br>Rosendaël</br>
+      Tél. : 07 49 03 74 36</br>
+      Email : laetibeauty59@gmail.com</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/laeti_beauty59" target="_blank">
+          <img src="img/instaa.png" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com/laeti.beauty.102288" target="_blank">
+          <img src="img/logo facebook.png" alt="Facebook" />
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h4>Horaires</h4>
+<ul class="horaires">
+        <li>Lundi : 9h00 – 18h30</li>
+        <li>Mardi : 9h00 – 18h30</li>
+        <li>Mercredi : 9h00 – 18h30</li>
+        <li>Jeudi : 9h00 – 18h30</li>
+        <li>Vendredi : 9h00 – 18h30</li>
+        <li>Samedi : 9h00 – 18h30</li>
+        <li>Dimanche : fermé</li>
+      </ul>
+
+    <div class="footer-bottom">
+      © 2025 Laeti’Beauty — Site conçu avec douceur.
+    </div>
+  </footer>
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+  });
+
+  document.querySelectorAll('a[href]').forEach(link => {
+    const url = new URL(link.href);
+    const isSameOrigin = url.origin === location.origin;
+
+    if (isSameOrigin && !url.hash && !link.target) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.body.classList.remove('loaded');
+        setTimeout(() => {
+          window.location.href = this.href;
+        }, 300);
+      });
+    }
+  });
+</script>
+</body>
+</html>
