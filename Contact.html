@@ -20,20 +20,19 @@
 body.fade.loaded {
   opacity: 1;
 }
-    /* === EN-TÊTE FIXE (HEADER) === */
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  z-index: 1000;
-}
-header img {
+ header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
       height: 60px;
       transition: transform 0.3s ease;
     }
@@ -42,15 +41,12 @@ header img {
       transform: scale(1.05);
     }
 
-
-/* Liens de navigation */
-.nav a {
-  margin: 0 1rem;
-  text-decoration: none;
-  color: #9c6e5c;
-  font-weight: 500;
-}
-
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #9c6e5c;
+      font-weight: 500;
+    }
     .main {
       max-width: 1200px;
       margin: 0 auto;
@@ -153,6 +149,26 @@ header img {
       .formulaire form {
         gap: 1rem;
       }
+     
+      .reserve-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: #9c6e5c;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  z-index: 100;
+  text-decoration: none;
+}
+
+.reserve-btn:hover {
+  background: #a17948;
+}
     }
     .footer {
       background-color: #dcc6ac;
@@ -324,6 +340,8 @@ nav ul {
       </form>
     </div>
   </section>
+   <!-- BOUTON RESERVATION -->
+<a class="reserve-btn" href="https://wa.me/33600000000" target="_blank">← Réservez maintenant</a>
 
  <!-- FOOTER -->
   <footer>
@@ -389,7 +407,6 @@ nav ul {
     nav.classList.toggle("show");
     }
 </script>
-ttps://wa.me/33749037436" class="reserve-btn">Réservez maintenant</a>
 
 </body>
 </html>
