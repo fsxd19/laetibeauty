@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Soin du regard – Laeti'Beauty</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffaf8;
+      margin: 0;
+      padding: 0;
+      color: #5f3b2c;
+    }
+body.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+body.fade.loaded {
+  opacity: 1;
+}
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .header .logo img {
+      height: 60px;
+    }
+
+    .nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #9c6e5c;
+      font-weight: 500;
+    }
+
+    .main {
+      display: flex;
+      justify-content: space-between;
+      padding: 5rem 3rem;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .texte {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .texte h1 {
+      font-size: 2.7rem;
+      color: #9c6e5c;
+      margin-bottom: 0.6rem;  
+      border-bottom: 2px solid #cdb7a0;
+      
+    }
+
+    .texte hr {
+      width: 70px;
+      border: none;
+      height: 2px;
+      background-color: #e2e9e400;
+      margin-left: 4;
+      margin-bottom: 1.5rem;
+    }
+
+    .texte p {
+      color: #7a554b;
+      margin-bottom: 2rem;
+    }
+
+    .tarifs h3 {
+      font-size: 1.2rem;
+      margin: 1.8rem 0 0.6rem;
+      color: #6d4c41;
+    }
+
+    .tarifs ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .tarif-list {
+      list-style: none;
+      padding: 0;
+      font-size: 1rem;
+      line-height: 2;
+      max-width: 450px;
+    }
+
+    .tarif-list li {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dotted #ccc;
+      padding: 0.3rem 0;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .tarif-list li:hover {
+      background-color: #f5e8e2;
+      transform: scale(1.01);
+      border-radius: 6px;
+    }
+
+    .image {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 2px rgba(0,0,0,0.08);
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 4rem;
+      padding: 0.6rem 1.2rem;
+      background: #9c6e5c;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .back-button:hover {
+      transform: translateX(-4px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .reserve-btn {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      background: #9c6e5c;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 0.6rem 1.2rem;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      z-index: 100;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #dcc6ac;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: #5b3d2d;
+    }
+
+    .footer-section {
+      flex: 1 1 300px;
+      margin: 1rem;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    .footer-section p,
+    .footer-section a {
+      font-size: 0.9rem;
+      color: #5b3d2d;
+      text-decoration: none;
+    }
+
+    .social-icons img {
+      width: 22px;
+      margin-right: 12px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #5b3d2d;
+      margin-top: 2rem;
+      flex: 1 1 100%;
+    }
+  </style>
+</head>
+<body class="fade">
+
+  <header class="header">
+    <a href="index.html#accueil">
+    <div class="logo"><img src="img/logo.png" alt="Logo Laeti'Beauty"></div>
+    <nav class="nav">
+      <a href="index.html">Accueil</a>
+      <a href="prestations.html">Préstations</a>
+      <a href="à propos.html">À propos</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="main">
+    <div class="texte">
+      <h1>Soin du regard</h1>
+      <hr>
+      <p>Mettez en valeur votre regard avec des soins délicats, naturels et durables.</p>
+
+      <div class="tarif-list">
+        <h3>Soin du regard</h3>
+        <ul>
+          <li><span>Teinture Sourcils (15 min)</span><span>8 €</span></li>
+          <li><span>Teinture Cils (15 min)</span><span>8 €</span></li>
+          <li><span>Rehaussement de Cils (30 min)</span><span>30 €</span></li>
+          <li><span>Rehaussement + Teinture + soins botox (45 min)</span><span>40 €</span></li>
+          <li><span>Extension cils en W (1h30)</span><span>50 €</span></li>
+          <li><span>Extension cils en Y (1h30)</span><span>50 €</span></li>
+          <li><span>Remplissage 2 semaines</span><span>30 €</span></li>
+          <li><span>Remplissage 3 semaines</span><span>40 €</span></li>
+        </ul>
+      </div>
+
+      <a href="prestations.html" class="back-button"> Retour aux prestations</a>
+    </div>
+
+    <div class="image">
+      <img src="img/Regard.png" alt="Soin du regard">
+    </div>
+  </section>
+
+  <a class="reserve-btn" href="https://wa.me/33600000000" target="_blank">← Réservez maintenant</a>
+
+  <footer>
+    <div class="footer-section">
+      <img src="img/logo.png" alt="Logo" style="height: 60px; margin-bottom: 1rem;">
+      <p>Institut de bien-être à Rosendaël</p>
+      <p>Ouvert du lundi au vendredi de 9h à 18h</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Adresse & contact</h4>
+      <p>Laeti’Beauty </br>
+      74 rue Paul Vancassel<br>Rosendaël</br>
+      Tél. : 07 49 03 74 36</br>
+      Email : laetibeauty59@gmail.com</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/laeti_beauty59" target="_blank">
+          <img src="img/instaa.png" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com/laeti.beauty.102288" target="_blank">
+          <img src="img/logo facebook.png" alt="Facebook" />
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h4>Horaires</h4>
+      <p>Lundi : fermé</p>
+      <p>Mardi à Vendredi : 9h00 – 18h00</p>
+      <p>Week-end : fermé</p>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Laeti’Beauty — Site conçu avec douceur.
+    </div>
+  </footer>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+  });
+
+  document.querySelectorAll('a[href]').forEach(link => {
+    const url = new URL(link.href);
+    const isSameOrigin = url.origin === location.origin;
+
+    if (isSameOrigin && !url.hash && !link.target) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.body.classList.remove('loaded');
+        setTimeout(() => {
+          window.location.href = this.href;
+        }, 300);
+      });
+    }
+  });
+</script>
+</body>
+</html>

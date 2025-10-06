@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>À propos – Laeti'Beauty</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+   body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffaf8;
+  color: #333;
+  scroll-behavior: smooth;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+header img {
+      height: 60px;
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+
+/* Liens de navigation */
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #9c6e5c;
+  font-weight: 500;
+}
+.apropos { 
+  max-width: 1200px;
+  margin: auto; 
+  padding: 4rem 2rem; 
+}
+.apropos h1 {
+  font-size: 2.5rem;
+  color: #6d4c41;
+  border-bottom: 2px solid #cdb7a0;
+  padding-bottom: 0.4rem;
+}
+.apropos p { 
+  line-height: 1.8;
+  color: #7a554b;
+  margin-bottom: 2rem;
+}
+.gallery { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit,
+  minmax(280px, 1fr));
+  gap: 2rem; 
+  margin-top: 2rem;
+}
+.gallery img { 
+  width: 100%; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.quote {
+   font-style: italic;
+    color: #9c6e5c; 
+    font-size: 1.2rem; 
+    text-align: center; 
+    margin-top: 3rem;
+}
+    /* === PIED DE PAGE (FOOTER) === */
+footer {
+  background-color: #dcc6ac !important;
+  width: 100%;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #5b3d2d;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1 1 
+  0px;
+}
+
+.footer-logo {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 0.95rem;
+  color: #5b3d2d;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #5b3d2d;
+  margin-top: 2rem;
+}
+
+.social-icons img {
+  width: 26px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-section {
+    max-width: 100%;
+  }
+}
+.img-certifs {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.section-apropos img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .banner {
+    height: 200px;
+  }
+
+  nav a {
+    margin-left: 1rem;
+    font-size: 0.95rem;
+  }
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.burger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+}
+
+  </style>
+</head>
+<body class="fade">
+
+  </head>
+<body class="fade">
+  <header>
+  <a href="index.html"><img src="img/logo.png" alt="Logo Laeti'Beauty"></a>
+  <nav>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+    <ul id="nav-links">
+  <li><a href="index.html#accueil">Accueil</a></li>
+  <li><a href="prestations.html">Prestations</a></li>
+  <li><a href="à propos.html">À propos</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+</ul>
+  </nav>
+</header>
+
+  <main class="apropos">
+    <h1>À propos de Laëtitia</h1>
+
+    <p>
+      Laëtitia Vandenbusche est la fondatrice de <strong>Laeti’Beauty</strong>, un institut de bien-être niché à Rosendaël.
+      Après une carrière dans le commerce, elle a décidé de se reconvertir dans un domaine qui correspond à sa vraie nature : prendre soin des autres.
+    </p>
+
+    <p>
+      Passionnée, douce et profondément humaine, Laëtitia a suivi de nombreuses formations dans le domaine du bien-être et des soins esthétiques. Elle se lance en 2024, avec une mission : offrir des moments de calme et de reconnexion à chaque femme qui franchit la porte de son institut.
+    </p>
+    <h2>Un lieu chaleureux</h2>
+    <p>
+      L’institut Laeti’Beauty a été pensé comme un cocon : une ambiance zen, des tons naturels, et une atmosphère propice au lâcher-prise.
+      Voici quelques photos de l’intérieur :
+    </p>
+
+    <div class="gallery">
+      <img src="img/IMG_5214.JPEG" alt="Cabine Laeti’Beauty" />
+      <img src="img/IMG_5215.JPEG" alt="Espace de soins Laeti’Beauty" />
+    </div>
+
+    <h2>Ses diplômes & certifications</h2>
+    <p>Laëtitia a obtenu de nombreuses certifications professionnelles attestant de son sérieux et de son expertise :</p>
+
+   <div class="gallery">
+  <div class="image-box">
+   <img src="img/IMG_5213.JPEG" alt="Certifications Laetitia" class="img-certifs">
+    <p class="caption">Un aperçu de ses certifications obtenues en massages et soins bien-être.</p>
+  </div>
+</div>
+ <!-- FOOTER -->
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <img src="img/logo.png" alt="Logo" class="footer-logo">
+      <p>Institut de bien-être à Rosendaël</p>
+      <p>Ouvert du lundi au vendredi de 9h à 18h</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Adresse & contact</h4>
+      <p>Laeti’Beauty<br>
+      74 rue Paul Vancassel<br>
+      Rosendaël<br>
+      Tél. : 07 49 03 74 36<br>
+      Email : <a href="mailto:laetibeauty59@gmail.com">laetibeauty59@gmail.com</a></p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/laeti_beauty59" target="_blank"><img src="img/instaa.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com/laeti.beauty.102288" target="_blank"><img src="img/logo facebook.png" alt="Facebook"></a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h4>Horaires</h4>
+      <ul class="horaires">
+        <li>Lundi : 9h00 – 18h30</li>
+        <li>Mardi : 9h00 – 18h30</li>
+        <li>Mercredi : 9h00 – 18h30</li>
+        <li>Jeudi : 9h00 – 18h30</li>
+        <li>Vendredi : 9h00 – 18h30</li>
+        <li>Samedi : 9h00 – 18h30</li>
+        <li>Dimanche : fermé</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Laeti’Beauty — Site conçu avec douceur.
+  </div>
+</footer>
+
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('loaded');
+    });
+
+    document.querySelectorAll('a[href]').forEach(link => {
+      const url = new URL(link.href);
+      const isSameOrigin = url.origin === location.origin;
+
+      if (isSameOrigin && !url.hash && !link.target) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.body.classList.remove('loaded');
+          setTimeout(() => {
+            window.location.href = link.href;
+          }, 100);
+        });
+      }
+    });function toggleMenu() {
+    const nav = document.getElementById("nav-links");
+    nav.classList.toggle("show");
+    }
+    
+  </script>
+</body>
+</html>
