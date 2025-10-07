@@ -77,6 +77,32 @@ header img {
     text-align: center; 
     margin-top: 3rem;
 }
+    /* === BOUTON FLOTTANT RÉSERVATION (fixe en bas) === */
+.btn-floating {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: #a98d6a;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+  z-index: 1001;
+}
+
+.btn-floating:hover {
+  background: #a1621a;
+}
+
+.btn-floating i {
+  margin-right: 8px;
+}
+
     /* === PIED DE PAGE (FOOTER) === */
 footer {
   background-color: #dcc6ac !important;
@@ -323,3 +349,4 @@ nav ul {
   </script>
 </body>
 </html>
+
