@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos — Laeti’Beauty</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-sans { font-family: 'Inter', sans-serif; }
+        .reveal { opacity: 0; transform: translateY(20px); animation: reveal 1s forwards; }
+        @keyframes reveal { to { opacity: 1; transform: translateY(0); } }
+        .img-card { border-radius: 2rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.4s ease; }
+        .img-card:hover { transform: scale(1.02); }
+    </style>
+</head>
+<body class="bg-[#fffaf8] text-gray-800 font-sans antialiased">
+
+    <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html#accueil">
+                <img src="img/logo.png" alt="Laeti'Beauty" class="h-12 hover:scale-105 transition-transform">
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html#accueil" class="text-stone-600 hover:text-[#a98d6a] transition font-medium">Accueil</a>
+                <a href="prestations.html" class="text-stone-600 hover:text-[#a98d6a] transition font-medium">Prestations</a>
+                <a href="à propos.html" class="text-stone-600 hover:text-[#a98d6a] transition font-medium">À propos</a>
+                <a href="Contact.html" class="text-stone-600 hover:text-[#a98d6a] transition font-medium">Contact</a>
+            </nav>
+            <button class="md:hidden text-2xl text-stone-600" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <div class="h-32 md:h-40"></div>
+
+    <section class="max-w-6xl mx-auto px-4 mb-24 reveal">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7">
+                <span class="text-[#a98d6a] uppercase tracking-[0.4em] text-xs mb-3 block font-bold">La Fondatrice</span>
+                <h1 class="text-5xl md:text-6xl text-stone-800 mb-8 italic font-serif leading-tight">À propos de Laëtitia</h1>
+                <div class="w-20 h-px bg-[#cdb7a0] mb-8"></div>
+                
+                <div class="space-y-6 text-stone-600 leading-relaxed italic text-lg">
+                    <p>
+                        Laëtitia Vandenbusche est la fondatrice de <strong>Laeti’Beauty</strong>, un institut de bien-être niché à Rosendaël. 
+                        Après une carrière dans le commerce, elle a décidé de se reconvertir dans un domaine qui correspond à sa vraie nature : <strong>prendre soin des autres.</strong>
+                    </p>
+                    <p>
+                        Passionnée, douce et profondément humaine, Laëtitia a suivi de nombreuses formations dans le domaine du bien-être et des soins esthétiques. Elle se lance en 2024 avec une mission : offrir des moments de calme et de reconnexion à chaque femme qui franchit la porte de son institut.
+                    </p>
+                </div>
+            </div>
+            <div class="md:col-span-5">
+                <div class="img-card bg-stone-100 aspect-square">
+                    <img src="img/laetitia.png" alt="Laetitia" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-20 mb-24">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-serif italic text-stone-800 mb-4">Un lieu chaleureux</h2>
+                <p class="text-stone-500 italic max-w-2xl mx-auto">
+                    L’institut Laeti’Beauty a été pensé comme un cocon : une ambiance zen, des tons naturels, et une atmosphère propice au lâcher-prise.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 reveal">
+                <div class="img-card h-[400px]">
+                    <img src="img/IMG_5214.JPEG" alt="Cabine Laeti’Beauty" class="w-full h-full object-cover">
+                </div>
+                <div class="img-card h-[400px]">
+                    <img src="img/IMG_5215.JPEG" alt="Espace de soins Laeti’Beauty" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 mb-32 reveal">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-5 order-2 md:order-1">
+                <div class="img-card border-8 border-white shadow-2xl">
+                    <img src="img/IMG_5213.JPEG" alt="Certifications Laetitia" class="w-full h-auto">
+                </div>
+                <p class="text-center mt-4 text-xs text-stone-400 uppercase tracking-widest italic">Expertise certifiée</p>
+            </div>
+            <div class="md:col-span-7 order-1 md:order-2">
+                <h2 class="text-4xl font-serif italic text-stone-800 mb-6">Ses diplômes & certifications</h2>
+                <p class="text-stone-600 text-lg italic leading-relaxed mb-8">
+                    Laëtitia a obtenu de nombreuses certifications professionnelles attestant de son sérieux et de son expertise. 
+                    Chaque diplôme représente un engagement envers la qualité et la sécurité des soins prodigués.
+                </p>
+                <div class="p-6 bg-[#fdfaf6] border-l-4 border-[#a98d6a] rounded-r-2xl italic text-stone-500">
+                    "Un aperçu de ses certifications obtenues en massages et soins bien-être pour vous offrir le meilleur de l'esthétique."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#f2e9e1] pt-20 pb-8 px-4 text-center md:text-left">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+        
+        <div>
+            <img src="img/logo.png" alt="Laeti'Beauty" class="h-14 mx-auto md:mx-0 mb-6 opacity-90">
+            <p class="text-stone-600 text-sm italic leading-relaxed">
+                Une parenthèse de douceur et d'expertise au cœur de Rosendaël. 
+                Prendre soin de vous est ma priorité.
+            </p>
+            <div class="flex justify-center md:justify-start space-x-5 mt-6">
+                <a href="https://www.instagram.com/laeti_beauty59" target="_blank" class="hover:scale-110 transition-transform">
+                    <img src="img/instaa.png" alt="Instagram" class="h-5 opacity-70">
+                </a>
+                <a href="https://www.facebook.com/laeti.beauty.102288" target="_blank" class="hover:scale-110 transition-transform">
+                    <img src="img/logo facebook.png" alt="Facebook" class="h-5 opacity-70">
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="font-serif text-stone-800 text-lg mb-6 italic">Contact & Accès</h4>
+            <p class="text-stone-600 text-sm italic leading-loose">
+                📍 74 rue Paul Vancassel, Rosendaël<br>
+                📞 07 49 03 74 36<br>
+                ✉️ laetibeauty59@gmail.com
+            </p>
+        </div>
+
+        <div>
+            <h4 class="font-serif text-stone-800 text-lg mb-6 italic">Horaires</h4>
+            <div class="text-stone-600 text-sm italic space-y-2">
+                <p class="flex justify-between border-b border-stone-200 pb-1"><span>Mardi - Vendredi</span> <span>09:00 - 18:00</span></p>
+                <p class="flex justify-between border-b border-stone-200 pb-1"><span>Lundi & Week-end</span> <span>Fermé</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-20 pt-8 border-t border-stone-200 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-stone-400 text-[10px] uppercase tracking-widest italic">
+            © 2026 Laeti’Beauty — Tous droits réservés
+        </p>
+        <div class="flex space-x-6 text-stone-400 text-[10px] uppercase tracking-widest italic">
+            <a href="mentions-legales.html" class="hover:text-[#a98d6a] transition">Mentions Légales</a>
+            <a href="cgv.html" class="hover:text-[#a98d6a] transition">CGV</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

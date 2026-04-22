@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laeti’Beauty — Institut de bien-être à Rosendaël</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+
+    <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html#accueil">
+                <img src="img/logo.png" alt="Laeti'Beauty" class="h-12 hover:scale-105 transition-transform">
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html#accueil" class="text-stone-600 hover:text-[#a98d6a] transition font-medium">Accueil</a>
+                <a href="prestations.html" class="text-stone-600 hover:text-[#a98d6a] transition font-medium">Prestations</a>
+                <a href="à propos.html" class="text-stone-600 hover:text-[#a98d6a] transition font-medium">À propos</a>
+                <a href="Contact.html" class="text-stone-600 hover:text-[#a98d6a] transition font-medium">Contact</a>
+            </nav>
+            <button class="md:hidden text-2xl text-stone-600" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <section id="accueil" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="img/IMG_5214.JPEG" alt="Institut" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#fffaf8]"></div>
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <span class="text-[#a98d6a] uppercase tracking-[0.3em] text-sm mb-4 block">Douceur & Sérénité</span>
+            <h1 class="text-5xl md:text-7xl text-stone-800 mb-6 italic">Laeti’Beauty</h1>
+            <p class="text-lg md:text-xl text-stone-600 max-w-2xl mx-auto mb-10 font-light italic leading-relaxed">
+                Une parenthèse de bien-être à Rosendaël.
+            </p>
+            <a href="#prestations" class="bg-stone-800 text-white px-10 py-4 rounded-full hover:bg-[#a98d6a] transition shadow-xl uppercase text-xs tracking-widest font-bold">Découvrir les soins</a>
+        </div>
+    </section>
+
+    <section id="prestations" class="py-24 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl text-stone-800 mb-4 italic">Nos Prestations</h2>
+            <div class="w-16 h-1 bg-[#cdb7a0] mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-10">
+            
+            <a href="visage.html" class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group block">
+                <div class="h-64 overflow-hidden">
+                    <img src="img/soins du visage (2).png" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-xl mb-3 italic">Soins du Visage</h3>
+                    <p class="text-stone-500 text-sm mb-4 font-light italic">Rituels éclat et pureté personnalisés.</p>
+                    <span class="text-[#a98d6a] text-xs font-bold tracking-widest uppercase">Réserver ce soin</span>
+                </div>
+            </a>
+
+            <a href="massages.html" class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group block">
+                <div class="h-64 overflow-hidden">
+                    <img src="img/Massage.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-xl mb-3 italic">Massages </h3>
+                    <p class="text-stone-500 text-sm mb-4 font-light italic">Lâcher-prise et relaxation profonde.</p>
+                    <span class="text-[#a98d6a] text-xs font-bold tracking-widest uppercase">Réserver ce soin</span>
+                </div>
+            </a>
+
+            <a href="epilations.html" class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group block">
+                <div class="h-64 overflow-hidden">
+                    <img src="img/Epilations 3.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-xl mb-3 italic">Épilations</h3>
+                    <p class="text-stone-500 text-sm mb-4 font-light italic">Douceur et précision.</p>
+                    <span class="text-[#a98d6a] text-xs font-bold tracking-widest uppercase">Réserver ce soin</span>
+                </div>
+            </a>
+
+            <a href="regard.html" class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group block">
+                <div class="h-64 overflow-hidden">
+                    <img src="img/regard (2).png" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-xl mb-3 italic">Beauté du Regard</h3>
+                    <p class="text-stone-500 text-sm mb-4 font-light italic">Réhaussement et teinture de cils.</p>
+                    <span class="text-[#a98d6a] text-xs font-bold tracking-widest uppercase">Réserver ce soin</span>
+                </div>
+            </a>
+
+            <a href="mains.html" class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group block">
+                <div class="h-64 overflow-hidden">
+                    <img src="img/Beauté mains et pieds.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-xl mb-3 italic">Mains & Pieds</h3>
+                    <p class="text-stone-500 text-sm mb-4 font-light italic">Pose de vernis semi-permanent.</p>
+                    <span class="text-[#a98d6a] text-xs font-bold tracking-widest uppercase">Réserver ce soin</span>
+                </div>
+            </a>
+
+            <a href="maquillage.html" class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group block">
+                <div class="h-64 overflow-hidden">
+                    <img src="img/Maquillage.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-xl mb-3 italic">Maquillage</h3>
+                    <p class="text-stone-500 text-sm mb-4 font-light italic">Combinez vos soins préférés.</p>
+                    <span class="text-[#a98d6a] text-xs font-bold tracking-widest uppercase">Réserver ce soin</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <footer class="bg-[#f2e9e1] pt-20 pb-8 px-4 text-center md:text-left">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+        
+        <div>
+            <img src="img/logo.png" alt="Laeti'Beauty" class="h-14 mx-auto md:mx-0 mb-6 opacity-90">
+            <p class="text-stone-600 text-sm italic leading-relaxed">
+                Une parenthèse de douceur et d'expertise au cœur de Rosendaël. 
+                Prendre soin de vous est ma priorité.
+            </p>
+            <div class="flex justify-center md:justify-start space-x-5 mt-6">
+                <a href="https://www.instagram.com/laeti_beauty59" target="_blank" class="hover:scale-110 transition-transform">
+                    <img src="img/instaa.png" alt="Instagram" class="h-5 opacity-70">
+                </a>
+                <a href="https://www.facebook.com/laeti.beauty.102288" target="_blank" class="hover:scale-110 transition-transform">
+                    <img src="img/logo facebook.png" alt="Facebook" class="h-5 opacity-70">
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="font-serif text-stone-800 text-lg mb-6 italic">Contact & Accès</h4>
+            <p class="text-stone-600 text-sm italic leading-loose">
+                📍 74 rue Paul Vancassel, Rosendaël<br>
+                📞 07 49 03 74 36<br>
+                ✉️ laetibeauty59@gmail.com
+            </p>
+        </div>
+
+        <div>
+            <h4 class="font-serif text-stone-800 text-lg mb-6 italic">Horaires</h4>
+            <div class="text-stone-600 text-sm italic space-y-2">
+                <p class="flex justify-between border-b border-stone-200 pb-1"><span>Mardi - Vendredi</span> <span>09:00 - 18:00</span></p>
+                <p class="flex justify-between border-b border-stone-200 pb-1"><span>Lundi & Week-end</span> <span>Fermé</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-20 pt-8 border-t border-stone-200 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-stone-400 text-[10px] uppercase tracking-widest italic">
+            © 2026 Laeti’Beauty — Tous droits réservés
+        </p>
+        <div class="flex space-x-6 text-stone-400 text-[10px] uppercase tracking-widest italic">
+            <a href="mentions-legales.html" class="hover:text-[#a98d6a] transition">Mentions Légales</a>
+            <a href="cgv.html" class="hover:text-[#a98d6a] transition">CGV</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
